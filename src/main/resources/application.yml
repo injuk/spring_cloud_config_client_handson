@@ -1,0 +1,10 @@
+server:
+  port: 8850
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: ingnoh-configs
+  config:
+    import: configserver:http://localhost:8840
